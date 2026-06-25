@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy – Brain Surge | FunMindo</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --gold:    #F5A623;
+  --orange:  #E8491D;
+  --teal:    #00C6B8;
+  --bg:      #F7F8FA;
+  --surface: #FFFFFF;
+  --border:  #E8EBF2;
+  --text:    #1A1D2E;
+  --muted:   #6B7280;
+  --soft:    #F0F2F8;
+  --r:       12px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}
+
+/* Animated top stripe */
+.top-stripe{height:4px;background:linear-gradient(90deg,var(--gold) 0%,var(--orange) 35%,var(--teal) 65%,var(--gold) 100%);background-size:300% 100%;animation:stripe 4s linear infinite}
+@keyframes stripe{0%{background-position:0% 50%}100%{background-position:300% 50%}}
+
+.wrapper{max-width:860px;margin:0 auto;padding:48px 24px 80px}
+
+/* Header */
+.header{text-align:center;margin-bottom:56px;animation:fup .5s ease both}
+@keyframes fup{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+.studio-badge{display:inline-flex;align-items:center;gap:8px;background:#FFF7ED;border:1.5px solid #FDDFA5;border-radius:999px;padding:6px 18px;font-family:'Syne',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#B45309;margin-bottom:22px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pdot 1.8s ease-in-out infinite}
+@keyframes pdot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.7)}}
+
+.header h1{font-family:'Syne',sans-serif;font-size:clamp(30px,5.5vw,50px);font-weight:800;letter-spacing:-.03em;line-height:1.1;color:var(--text);margin-bottom:16px}
+.game-name{display:inline-block;position:relative}
+.game-name span{background:linear-gradient(120deg,var(--gold),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.game-name::after{content:'';position:absolute;left:0;bottom:-3px;width:100%;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--gold),var(--orange));transform:scaleX(0);transform-origin:left;animation:uline .6s .4s cubic-bezier(.22,1,.36,1) forwards}
+@keyframes uline{to{transform:scaleX(1)}}
+
+.header-meta{color:var(--muted);font-size:13.5px;display:flex;justify-content:center;gap:6px;flex-wrap:wrap;align-items:center;margin-top:4px}
+.header-meta strong{color:var(--text);font-weight:600}
+.sep{color:var(--border)}
+
+/* Notice */
+.notice{background:#FFFBEB;border:1.5px solid #FDE68A;border-left:4px solid var(--gold);border-radius:var(--r);padding:16px 20px;margin-bottom:40px;display:flex;gap:12px;align-items:flex-start;font-size:13.5px;line-height:1.65;color:#78350F;animation:fup .5s .1s ease both}
+.notice-icon{font-size:18px;flex-shrink:0;margin-top:1px}
+
+/* Section cards */
+.section{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--r);padding:28px 28px 24px;margin-bottom:16px;transition:border-color .25s,box-shadow .25s,transform .25s;animation:fup .45s ease both}
+.section:nth-child(1){animation-delay:.12s}.section:nth-child(2){animation-delay:.17s}.section:nth-child(3){animation-delay:.22s}.section:nth-child(4){animation-delay:.27s}.section:nth-child(5){animation-delay:.32s}.section:nth-child(6){animation-delay:.37s}.section:nth-child(7){animation-delay:.42s}.section:nth-child(8){animation-delay:.47s}.section:nth-child(9){animation-delay:.52s}.section:nth-child(10){animation-delay:.57s}.section:nth-child(11){animation-delay:.62s}.section:nth-child(12){animation-delay:.67s}.section:nth-child(13){animation-delay:.72s}.section:nth-child(14){animation-delay:.77s}
+.section:hover{border-color:#FDDFA5;box-shadow:0 4px 20px rgba(245,166,35,.1);transform:translateY(-1px)}
+
+.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.section-num{width:30px;height:30px;flex-shrink:0;border-radius:9px;background:linear-gradient(135deg,var(--gold),var(--orange));display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:13px;font-weight:800;color:#fff;box-shadow:0 2px 8px rgba(245,166,35,.35)}
+h2{font-family:'Syne',sans-serif;font-size:15.5px;font-weight:700;color:var(--text);letter-spacing:.01em}
+p{color:#374151;margin-bottom:10px;font-size:14.5px}
+p:last-child{margin-bottom:0}
+
+/* Table */
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px}
+.data-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.data-table th{background:var(--soft);color:#374151;font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:10px 14px;text-align:left;border-bottom:1.5px solid var(--border)}
+.data-table td{padding:11px 14px;border-bottom:1px solid #F3F4F6;color:#374151;vertical-align:top;font-size:13.5px}
+.data-table tr:last-child td{border-bottom:none}
+.data-table tr:hover td{background:#FFFBEB}
+
+.tag{display:inline-block;border-radius:6px;padding:2px 9px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.tag-blue{background:#EFF6FF;color:#1D4ED8}
+.tag-green{background:#F0FDF4;color:#15803D}
+.tag-orange{background:#FFF7ED;color:#C2410C}
+
+/* Arrow list */
+.pp-list{list-style:none;margin-top:6px}
+.pp-list li{padding:5px 0 5px 22px;position:relative;font-size:14px;color:#374151}
+.pp-list li::before{content:'→';position:absolute;left:0;color:var(--orange);font-size:12px;top:8px}
+
+/* Vendor list */
+.vendor-list{list-style:none;margin-top:8px}
+.vendor-list li{display:flex;align-items:flex-start;gap:12px;padding:14px 0;border-bottom:1px solid #F3F4F6;font-size:14px}
+.vendor-list li:last-child{border-bottom:none;padding-bottom:0}
+.vendor-icon{width:34px;height:34px;flex-shrink:0;border-radius:9px;background:var(--soft);display:flex;align-items:center;justify-content:center;font-size:17px}
+.vendor-name{font-family:'Syne',sans-serif;font-weight:700;font-size:13.5px;color:var(--text);margin-bottom:2px}
+.vendor-desc{color:var(--muted);font-size:13px;line-height:1.6}
+.vendor-link{display:inline-block;margin-top:5px;font-size:12px;color:var(--orange);text-decoration:none;font-weight:600}
+.vendor-link:hover{text-decoration:underline}
+
+/* Offline badge */
+.offline-badge{display:inline-flex;align-items:center;gap:7px;background:#F0FDF4;border:1.5px solid #BBF7D0;border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:600;color:#15803D;margin-top:10px}
+.offline-badge::before{content:'●';font-size:8px;color:#22C55E}
+
+/* Info tiles */
+.info-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+.info-tile{background:var(--soft);border-radius:10px;padding:14px 16px}
+.info-tile .label{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:4px;font-family:'Syne',sans-serif}
+.info-tile .value{font-size:14px;font-weight:600;color:var(--text)}
+
+/* Contact card */
+.contact-card{background:linear-gradient(135deg,#FFFBEB 0%,#FFF7ED 100%);border:1.5px solid #FDE68A;border-radius:var(--r);padding:24px 28px;margin-top:24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.contact-icon{font-size:30px;flex-shrink:0}
+.contact-text h3{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--text);margin-bottom:5px}
+.contact-text p{font-size:13.5px;color:var(--muted);margin:0}
+.contact-text a{color:var(--orange);text-decoration:none;font-weight:600}
+.contact-text a:hover{text-decoration:underline}
+
+/* Footer */
+.footer{margin-top:52px;padding-top:28px;border-top:1.5px solid var(--border);text-align:center;color:var(--muted);font-size:12.5px;line-height:1.9}
+.fm-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:15px;background:linear-gradient(120deg,var(--gold),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:inline-block}
+
+/* Mobile */
+@media(max-width:640px){
+  .wrapper{padding:24px 16px 60px}
+  .section{padding:18px 16px 16px;margin-bottom:12px}
+  .header{margin-bottom:32px}
+  h2{font-size:14px}
+  p{font-size:13.5px}
+  .notice{padding:14px;font-size:13px}
+  .data-table thead{display:none}
+  .data-table tr{display:block;padding:8px 0;border-bottom:1px solid #F3F4F6}
+  .data-table td{display:block;border:none;padding:3px 0;font-size:13px}
+  .data-table td::before{content:attr(data-label);display:block;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:2px}
+  .vendor-list li{flex-direction:column;gap:8px}
+  .contact-card{padding:18px 16px;flex-direction:column;gap:10px}
+  .info-row{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none !important;transition:none !important}}
+</style>
+</head>
+<body>
+
+<div class="top-stripe"></div>
+
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="studio-badge"><span class="dot"></span>FunMindo Studio</div>
+    <h1>Privacy Policy<br/><span class="game-name"><span>Brain Surge</span></span></h1>
+    <div class="header-meta">
+      Effective: <strong>June 25, 2026</strong>
+      <span class="sep">·</span>
+      Last Updated: <strong>June 25, 2026</strong>
+      <span class="sep">·</span>
+      Jurisdiction: <strong>India</strong>
+    </div>
+  </header>
+
+  <!-- INTRO NOTICE -->
+  <div class="notice">
+    <span class="notice-icon">📋</span>
+    <span>
+      This Privacy Policy explains how <strong>FunMindo</strong> ("we", "our", "us") handles information
+      in connection with the mobile game <strong>Brain Surge</strong> ("the Game"). This policy applies
+      solely to Brain Surge and not to any other FunMindo product. By downloading or playing Brain Surge,
+      you agree to the terms described here. If you do not agree, please uninstall the Game.
+    </span>
+  </div>
+
+  <!-- 1 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">1</div><h2>Information We Collect</h2></div>
+    <p>Brain Surge is an <strong>offline, single-player trivia and quiz game</strong>. FunMindo does not
+       intentionally collect personal information directly from users. We do not operate any backend server
+       or database, and do not collect your name, email address, phone number, or any other personally
+       identifiable information.</p>
+    <div class="offline-badge">Fully offline — no account, no login, no cloud sync</div>
+    <div class="table-scroll" style="margin-top:16px">
+      <table class="data-table">
+        <thead>
+          <tr><th>Data Type</th><th>What It Is</th><th>Where It Goes</th><th>Collected By</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Data Type"><span class="tag tag-blue">Game Progress</span></td>
+            <td data-label="What It Is">Your scores, quiz results, coins, lifeline state, and daily-challenge completion.</td>
+            <td data-label="Where It Goes">Your device only (local storage)</td>
+            <td data-label="Collected By"><span class="tag tag-green">Device Local</span></td>
+          </tr>
+          <tr>
+            <td data-label="Data Type"><span class="tag tag-blue">Settings &amp; Preferences</span></td>
+            <td data-label="What It Is">Sound preferences and in-game options you configure.</td>
+            <td data-label="Where It Goes">Your device only (local storage)</td>
+            <td data-label="Collected By"><span class="tag tag-green">Device Local</span></td>
+          </tr>
+          <tr>
+            <td data-label="Data Type"><span class="tag tag-orange">Device Info</span></td>
+            <td data-label="What It Is">Device model, OS version, and screen size. Collected automatically by Google AdMob for ad delivery and performance.</td>
+            <td data-label="Where It Goes">Google AdMob servers</td>
+            <td data-label="Collected By"><span class="tag tag-orange">AdMob (Auto)</span></td>
+          </tr>
+          <tr>
+            <td data-label="Data Type"><span class="tag tag-orange">Advertising ID</span></td>
+            <td data-label="What It Is">A resettable Google Advertising ID used by AdMob to serve relevant ads. You can reset or opt out at any time in your Android device settings.</td>
+            <td data-label="Where It Goes">Google AdMob servers</td>
+            <td data-label="Collected By"><span class="tag tag-orange">AdMob (Auto)</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px;font-size:13px;color:var(--muted)">
+      ✅ FunMindo does not intentionally collect personal information directly from users. All game data
+      is stored locally on your device. The only external data handling is through Google AdMob, which
+      operates under its own separate privacy policy.
+    </p>
+  </div>
+
+  <!-- 2 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">2</div><h2>How We Use Information</h2></div>
+    <ul class="pp-list">
+      <li>To save your game progress, scores, coins, and preferences locally on your device</li>
+      <li>To deliver advertisements through Google AdMob and keep the game free to play</li>
+      <li>To measure ad performance and manage ad frequency (handled entirely by AdMob)</li>
+      <li>To comply with applicable Indian law</li>
+    </ul>
+    <p style="margin-top:12px">FunMindo does not sell, rent, trade, or share your information with
+       any third party for marketing purposes. We do not use your data for profiling or tracking
+       outside of what is described in this policy.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">3</div><h2>Local Data Storage</h2></div>
+    <p>Brain Surge stores all game data exclusively on your device. This data never leaves your device
+       and is not transmitted to FunMindo or any third party.</p>
+    <ul class="pp-list">
+      <li><strong>What is stored locally:</strong> quiz scores, coin balance, daily challenge completion, lifeline availability, category progress, and sound settings</li>
+      <li><strong>When is it deleted:</strong> automatically when you clear app data in your device settings, or when you uninstall the Game</li>
+      <li><strong>Can FunMindo access it:</strong> No — FunMindo operates no server or backend and has no mechanism to receive or view data stored on your device</li>
+    </ul>
+  </div>
+
+  <!-- 4 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">4</div><h2>Advertising &amp; Google AdMob</h2></div>
+    <p>Brain Surge is free to play and supported by advertisements delivered by <strong>Google AdMob</strong>.
+       AdMob may use your device's resettable Advertising ID to serve relevant ads. Brain Surge uses
+       <strong>banner, interstitial, and rewarded</strong> ad formats.</p>
+    <ul class="vendor-list">
+      <li>
+        <div class="vendor-icon">📢</div>
+        <div>
+          <div class="vendor-name">Google AdMob</div>
+          <div class="vendor-desc">Delivers in-game advertisements. May collect device identifiers and Advertising IDs
+            for ad targeting and performance. FunMindo configures ads for a general audience (3+), but cannot guarantee
+            the content of every individual advertisement served by AdMob.</div>
+          <a class="vendor-link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy →</a>
+        </div>
+      </li>
+      <li>
+        <div class="vendor-icon">🏪</div>
+        <div>
+          <div class="vendor-name">Google Play Services</div>
+          <div class="vendor-desc">Used for distributing and updating the Game on Android devices. Subject to Google's privacy policy.</div>
+          <a class="vendor-link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy →</a>
+        </div>
+      </li>
+    </ul>
+    <p style="margin-top:16px"><strong>You can opt out of personalised ads at any time:</strong></p>
+    <ul class="pp-list">
+      <li><strong>Android:</strong> Settings → Google → Ads → "Opt out of Ads Personalisation"</li>
+      <li><strong>Reset Advertising ID:</strong> Settings → Google → Ads → "Reset advertising ID"</li>
+    </ul>
+    <p style="margin-top:10px;font-size:13.5px;color:var(--muted)">
+      Opting out means you will still see ads, but they will not be personalised. Game functionality is not affected.
+    </p>
+  </div>
+
+  <!-- 5 — NEW: Data Safety -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">5</div><h2>Google Play Data Safety</h2></div>
+    <p>In accordance with Google Play's Data Safety requirements, Brain Surge uses <strong>Google AdMob</strong>,
+       which may collect the following types of data for advertising and analytics purposes:</p>
+    <ul class="pp-list">
+      <li><strong>Device or other identifiers</strong> — such as the Android Advertising ID, used to serve and measure ads</li>
+      <li><strong>App interactions</strong> — including information about how ads are viewed and interacted with</li>
+      <li><strong>Diagnostics</strong> — crash logs and performance data that may be collected by AdMob or Google Play Services</li>
+    </ul>
+    <p style="margin-top:12px">This data is collected and processed by <strong>Google</strong>, not by FunMindo,
+       and is governed by Google's Privacy Policy:
+       <a href="https://policies.google.com/privacy" target="_blank" rel="noopener"
+          style="color:var(--orange);font-weight:600;text-decoration:none">
+         policies.google.com/privacy
+       </a>
+    </p>
+    <p style="margin-top:10px">FunMindo does not collect, share, or sell any data for advertising purposes
+       independently. All ad-related data collection is handled entirely by Google AdMob.</p>
+    <p style="margin-top:10px;font-size:13px;color:var(--muted)">
+      When completing the Google Play Console Data Safety form, data collection and sharing should be declared
+      under Google AdMob's SDK data practices, as FunMindo itself does not collect user data directly.
+    </p>
+  </div>
+
+  <!-- 6 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">6</div><h2>Legal Basis for Processing</h2></div>
+    <p>Under India's Digital Personal Data Protection Act, 2023 (DPDPA), FunMindo processes data on the following bases:</p>
+    <ul class="pp-list">
+      <li><strong>Consent</strong> — By downloading and playing Brain Surge, you consent to Google AdMob collecting device identifiers and Advertising IDs for ad delivery. You may withdraw this at any time by uninstalling the Game or opting out of personalised ads in device settings (see Section 4).</li>
+      <li><strong>Legitimate use</strong> — Local storage of game progress on your own device is a legitimate operational necessity for the Game to function.</li>
+      <li><strong>Legal obligation</strong> — We may retain information as required by the IT Act, 2000 and DPDPA 2023.</li>
+    </ul>
+  </div>
+
+  <!-- 7 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">7</div><h2>Children's Privacy</h2></div>
+    <p>Brain Surge is a trivia and quiz game designed for a <strong>general audience, including children</strong>,
+       and is rated <strong>Everyone (3+)</strong> on Google Play. We take children's privacy seriously.</p>
+    <ul class="pp-list">
+      <li>FunMindo does not intentionally collect personal information from any user, including children</li>
+      <li>The Game requires no account creation, no login, and no registration of any kind</li>
+      <li>All game data is stored locally on the player's own device</li>
+      <li>Brain Surge is configured as a <strong>Mixed Audience</strong> app; ad serving follows <strong>Google Play Families Policy</strong> requirements, including restrictions on interest-based advertising for child-directed users</li>
+    </ul>
+    <p style="margin-top:10px">If you are a parent or guardian with concerns, please contact us at
+       <strong>funmindostudio@gmail.com</strong>. We will respond promptly.</p>
+    <p style="font-size:13px;color:var(--muted);margin-top:8px">As ads are served by Google AdMob, FunMindo cannot
+       guarantee the content of every individual advertisement. We configure our ad units to request child-appropriate
+       settings consistent with Google Play Families requirements.</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">8</div><h2>Data Retention &amp; Deletion</h2></div>
+    <div class="info-row">
+      <div class="info-tile"><div class="label">Game Data</div><div class="value">Stored on your device only</div></div>
+      <div class="info-tile"><div class="label">FunMindo Servers</div><div class="value">None — we have no servers</div></div>
+      <div class="info-tile"><div class="label">Delete Game Data</div><div class="value">Uninstall the Game</div></div>
+      <div class="info-tile"><div class="label">Ad Data (AdMob)</div><div class="value">Governed by Google's policy</div></div>
+    </div>
+    <ul class="pp-list" style="margin-top:16px">
+      <li><strong>Device data</strong> — stored locally on your device; deleted when you clear app data in your device settings or uninstall the Game</li>
+      <li><strong>No FunMindo backend</strong> — FunMindo does not operate servers or databases; we do not intentionally collect or have access to your personal data</li>
+      <li><strong>AdMob data</strong> — managed by Google under their own retention policies; manageable via your Google account settings</li>
+    </ul>
+  </div>
+
+  <!-- 9 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">9</div><h2>Data Security</h2></div>
+    <p>Brain Surge stores all game data locally on your device and does not transmit it to any FunMindo
+       server. The security of locally stored game data depends on the security of your own device.</p>
+    <p>The only external data handling occurs through Google AdMob and Google Play Services, both of which
+       maintain their own industry-standard security practices. FunMindo does not intentionally collect
+       personal information and therefore takes reasonable steps to minimise any data exposure through its
+       third-party integrations.</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">10</div><h2>Your Rights</h2></div>
+    <p>Under applicable Indian law (DPDPA 2023 and IT Act, 2000), you have the right to:</p>
+    <ul class="pp-list">
+      <li><strong>Access</strong> — Request information about any data we hold (note: FunMindo holds no personal data directly)</li>
+      <li><strong>Deletion of local data</strong> — Clear your device data at any time by clearing app data in device settings, or by uninstalling the Game</li>
+      <li><strong>Opt-out of personalised ads</strong> — Via Android Settings → Google → Ads (see Section 4)</li>
+      <li><strong>Withdraw consent</strong> — Uninstall the Game to stop all data collection</li>
+    </ul>
+    <p style="margin-top:10px">To exercise any rights or raise concerns, contact us at
+       <strong>funmindostudio@gmail.com</strong>. We respond within <strong>30 days</strong>
+       in accordance with applicable Indian law.</p>
+  </div>
+
+  <!-- 11 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">11</div><h2>International Data Processing</h2></div>
+    <p>FunMindo is based in India and does not transfer your data internationally. However, <strong>Google AdMob</strong>
+       may process information on servers located outside India, including in the United States and other
+       countries. Such processing is governed by Google's privacy and security standards, which include
+       appropriate safeguards for international data transfers.</p>
+    <p>For details on how Google handles international data transfers, please review:
+       <a href="https://policies.google.com/privacy" target="_blank" rel="noopener"
+          style="color:var(--orange);font-weight:600;text-decoration:none">
+         policies.google.com/privacy
+       </a>
+    </p>
+  </div>
+
+  <!-- 12 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">12</div><h2>Changes to This Policy</h2></div>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with a
+       revised "Last Updated" date. Continued use of Brain Surge after any changes constitutes your
+       acceptance of the updated policy.</p>
+    <p>For significant changes, we will make reasonable efforts to notify users through an in-game notice
+       or via the Google Play Store update description.</p>
+  </div>
+
+  <!-- 13 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">13</div><h2>Grievance Officer</h2></div>
+    <p>In accordance with the Information Technology Act, 2000 and the Digital Personal Data Protection
+       Act, 2023, the Grievance Officer details are provided below:</p>
+    <div class="contact-card" style="margin-top:14px">
+      <div class="contact-icon">🏛️</div>
+      <div class="contact-text">
+        <h3>Grievance Officer — FunMindo</h3>
+        <p>
+          Organisation: <strong style="color:var(--text)">FunMindo</strong><br/>
+          Country of Operation: <strong style="color:var(--text)">India</strong><br/>
+          Email: <a href="mailto:funmindostudio@gmail.com">funmindostudio@gmail.com</a><br/>
+          Response time: Within 30 days of receiving your complaint
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:12px;font-size:13px;color:var(--muted)">We take all grievances seriously. If
+       you are not satisfied with our response, you may approach the Data Protection Board of India
+       once it becomes fully operational.</p>
+  </div>
+
+  <!-- 14 -->
+  <div class="section">
+    <div class="section-header"><div class="section-num">14</div><h2>Governing Law</h2></div>
+    <p>FunMindo is based in <strong>India (Maharashtra)</strong>. This Privacy Policy is governed by and
+       construed in accordance with the laws of India, including the Information Technology Act, 2000
+       and the Digital Personal Data Protection Act, 2023 (DPDPA). Any disputes arising out of this
+       policy shall be subject to the exclusive jurisdiction of the competent courts in Maharashtra, India.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-card">
+    <div class="contact-icon">✉️</div>
+    <div class="contact-text">
+      <h3>Contact FunMindo</h3>
+      <p>Questions about this policy or your data?<br/>
+         Email: <a href="mailto:funmindostudio@gmail.com">funmindostudio@gmail.com</a> — We respond within 30 days.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="fm-logo">FUNMINDO</p>
+    <p style="margin-top:4px">Brain Surge &nbsp;·&nbsp; Privacy Policy v1.0</p>
+    <p>© 2026 FunMindo. All rights reserved.</p>
+    <p style="margin-top:8px;font-size:11.5px;color:#9CA3AF">Last reviewed: June 25, 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
